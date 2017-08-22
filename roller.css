@@ -10,10 +10,17 @@ body {
 h1 {
     text-align: center;
     color: darkblue;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    color: darkblue;
 }
 
 table {
-    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;    
 }
 
 table, tr {
@@ -22,6 +29,7 @@ table, tr {
 
 th, td {
     text-align: left;
+    width: 50%;
 }
 
 input[type="button"] {
@@ -49,6 +57,7 @@ input {
 #input, #output {
     width: 50%;
     display: block;
+    margin-top: 50px;
 }
 
 #input {
@@ -57,5 +66,32 @@ input {
 
 #output {
     float: right;
-    margin-top: 50px;
+}
+
+.dead {
+    color: green;
+}
+
+.fail {
+    color: red;
+}
+
+.crit1 {
+    color: darkmagenta;
+}
+
+.crit2 {
+    color: darkorchid;
+}
+
+.crit3 {
+    color: fuchsia;
+}
+
+.hit {
+    color: black;
+}
+
+.miss {
+    color: darkgrey;
 }
