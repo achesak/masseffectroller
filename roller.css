@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "me123";
+    src: url("me123.ttf");
+}
+
+body {
+    font-family: "me123";
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+
+table {
+    margin-top: 50px;
+}
+
+table, tr {
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+}
+
+input[type="button"] {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-width: 0;
+    padding: 10px;
+    color: white;
+    background-color: darkblue;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+input {
+    font-family: "me123";
+}
+
+#input, #output {
+    width: 50%;
+    display: block;
+}
+
+#input {
+    float: left;
+}
+
+#output {
+    float: right;
+    margin-top: 50px;
+}
