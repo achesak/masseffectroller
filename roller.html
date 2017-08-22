@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mass Effect d20 roller</title>
+        <script type="text/javascript" src="roller.js"></script>
+    </head>
+
+    <body>
+        <h1>Mass Effect d20 roller</h1>
+
+        <div id="input">
+
+            <table>
+                <tr>
+                    <td>Dice</td>
+                    <td>
+                        <input type="text" size="2" id="count" />d<input type="text" size="2" id="die" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Crit</td>
+                    <td>
+                        <input type="text" size="2" id="critRange" />-20/x<input type="text" size="2" id="critMultiplier">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Enemy info</td>
+                    <td>
+                        Health: <input type="text" size="4" id="health" /><br />
+                        Defense: <input type="text" size="4" id="ac" /><br />
+                        Resistance: <input type="text" size="4" id="dr" />
+                    </td>
+                </tr>
+            </table>
+
+            <input type="button" id="submit" value="Calculate" />
+
+        </div>
+
+        <div id="output">
+
+        </div>
+
+        <script type="text/javascript">
+            let button = document.querySelector("#submit");
+            button.onclick = function() {
+                let count = parseInt(document.querySelector("#count").value);
+                let die = parseInt(document.querySelector("#die").value);
+                let critRange = parseInt(document.querySelector("#critRange").value);
+                let critMultiplier = parseInt(document.querySelector("#critMultiplier").value);
+                let health = parseInt(document.querySelector("#health").value);
+                let ac = parseInt(document.querySelector("#ac").value);
+                let dr = parseInt(document.querySelector("#dr").value);
+                let result = roller(count, die, critRange, critMultiplier, ac, dr, health);
+
+                let output = document.querySelector("#output");
+                output.innerHTML = result[0].join("<br />");
+            };
+        </script>
+
+    </body>
+</html>
