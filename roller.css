@@ -5,17 +5,22 @@
 
 body {
     font-family: "me123";
+    background-color: #17639A;
+    color: white;
+    margin: 0px;
 }
 
 h1 {
     text-align: center;
-    color: darkblue;
-    margin-top: 50px;
-    margin-bottom: 0px;
+    color: white;
+    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #101224;
 }
 
-h2 {
-    color: darkblue;
+h1, h2 {
+    font-weight: normal;
 }
 
 table {
@@ -41,13 +46,15 @@ input[type="button"] {
     border-width: 0;
     padding: 10px;
     color: white;
-    background-color: darkblue;
+    background-color: #DF7D29;
     border-radius: 10px;
 }
 
 input[type="text"] {
     margin-left: 4px;
     margin-right: 4px;
+    border-radius: 8px;
+    padding: 4px;
 }
 
 input {
@@ -55,17 +62,19 @@ input {
 }
 
 #input, #output {
-    width: 50%;
+    width: calc(50% - 10px);
     display: block;
-    margin-top: 50px;
 }
 
 #input {
     float: left;
+    margin-left: 10px;
 }
 
 #output {
     float: right;
+    margin-top: 20px;
+    margin-right: 10px;
 }
 
 .dead {
@@ -77,19 +86,19 @@ input {
 }
 
 .crit1 {
-    color: darkmagenta;
+    color: #DF7D29;
 }
 
 .crit2 {
-    color: darkorchid;
+    color: #DF7D29;
 }
 
 .crit3 {
-    color: fuchsia;
+    color: #DF7D29;
 }
 
 .hit {
-    color: black;
+    color: white;
 }
 
 .miss {
