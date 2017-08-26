@@ -78,7 +78,13 @@ input {
 }
 
 .dead {
-    color: green;
+    color: white;
+    font-weight: bold;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
 }
 
 .fail {
