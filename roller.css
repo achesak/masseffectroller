@@ -80,6 +80,7 @@ input {
 .dead {
     color: white;
     font-weight: bold;
+    font-size: 300%;
     animation: blinker 1s linear infinite;
 }
 
